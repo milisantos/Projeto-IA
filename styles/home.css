@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* secao do cabecalho */
+header {
+  
+    display: flex; /* Ativa layout flexbox no cabeçalho */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; /* Distribui os itens nas extremidades com espaçamento entre eles */
+    
+  }
+  img{
+    margin: 5px 50px 2px 100px;
+  }
+  
+  .links {
+    display: flex; /* Ativa layout flexbox para os links */
+    margin-right: 300px;
+  }
+   
+  .links li {
+    margin-top: 40px;
+    list-style: none;
+    margin-right: 100px; /* Espaçamento de 25px entre os links */
+  }
+  
+  .links a {
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 20px;
+    display: block; /* O link ocupa o espaço total do li */
+    width: 152px; /* Largura dos botões */
+    height: 40px; /* Altura dos botões */
+    text-align: center; /* Alinha o texto no centro */
+    line-height: 40px; /* Alinha verticalmente o texto dentro da altura */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    border: none; /* Remove a borda padrão */
+    border-radius: 20px; /* Bordas arredondadas */
+    
+  }
+ 
+/* secao de introducao do projeto */
+  .base{
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: #ff862f;
+    background-size: contain;
+    background-position: center; 
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.letreiro h1{
+  word-break: normal;
+  margin-top: 0px;
+  width: 500px;
+  font-size: 60px;
+  color: aliceblue;
+}
+.letreiro p{
+  margin-left: 10px;
+  font-size: 25px;
+  color: black;
+}
+.letreiro a{
+  display: block; /* O link ocupa o espaço total do li */
+  width: 152px; /* Largura dos botões */
+  height: 40px; /* Altura dos botões */
+  margin-left: 10px;
+  text-align: center; /* Alinha o texto no centro */
+  line-height: 40px; /* Alinha verticalmente o texto dentro da altura */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  font-weight: bold;
+  background-color: black;
+  color: #FFF500;
+  border-radius: 20px;
+  
+}
+
+
+
+
+/* secao 2 descricao da base de dados */
+.apresentacao{
+  display: flex;
+ justify-content: center;
+  /* imagem de fundo */
+}
+
+.yellow{
+  width: 70%;
+  background-color: #FFF500;
+  border-radius: 10px;
+  margin-top: 200px;
+}
+
+
+
+
+
+
+

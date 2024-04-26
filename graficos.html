@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/graficos.css">
+    <link rel="stylesheet" href="/styles/home.css">
     <title>Gráficos</title>
 </head>
 <body>
+
+    <!-- menu do site -->
+    <header>
+        <img src="/img/logo.svg" alt="logomarca" width="100px">
+        <ul class="links">
+            <li>
+                <a href="#" class="btn btn-outline-danger">Base</a>
+            </li>
+            <li>
+                <a href="#" class="btn btn-outline-warning">Análise</a>
+            </li>
+
+        </ul>
+          
+    </header>
+
     <div id="fundoGraficos">
           <h1 id="titulo1">Informações Base De Dados Acidentes 2020</h1>
 
@@ -32,7 +50,101 @@
                 <p class="linhaVerde"></p>
            </div>
 
+            <div class="descricaoGraficos">
+               <h2 class="titulo">Acidentes com e sem cinto de segurança</h2>
+               <img class="imgGrafico" src="/imgTelaGraficos/acidentes-comCinto-SemCinto.png" alt="Grafico com e sem cinto">
+               <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" alt=""></h3>
+               <p class="informacoesGraficos">
+                Em um total de 4.800 acidentes registrados, 1.200 envolviam passageiros que não estavam utilizando cinto de segurança, enquanto 3.500 acidentes envolviam passageiros que estavam utilizando o cinto de segurança.
+               </p>
+               <p class="linhaVerde"></p>
+           </div>
+
+            <div class="descricaoGraficos">
+                <h2 class="titulo">Acidentes com embriaguez</h2>
+                <img class="imgGrafico" src="/imgTelaGraficos/embreagados.png" alt="Grafico embriaguez">
+                <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" alt=""></h3>
+                <p class="informacoesGraficos">
+                    Em uma amostra de 4.600 acidentes analisados, 4.100 envolviam indivíduos que não estavam sob efeito de álcool, enquanto 300 acidentes envolviam indivíduos embriagados e 200 acidentes não tiveram informação disponível sobre o estado de embriaguez dos envolvidos.
+                </p>
+                <p class="linhaVerde"></p>
+            </div>
+
+            <div class="descricaoGraficos">
+                <h2 class="titulo">Acidentes com condutor</h2>
+                <img class="imgGrafico" src="/imgTelaGraficos/acidentes-com-condutor.png" alt="Grafico condutor">
+                <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" alt=""></h3>
+                <p class="informacoesGraficos">
+                    Aproximadamente 2.800 acidentes envolviam veículos com condutor, enquanto cerca de 1.700 acidentes ocorreram em circunstâncias em que o veículo não tinha um condutor.
+                </p>
+                <p class="linhaVerde"></p>
+            </div>
+
+            <div class="descricaoGraficos">
+                <h2 class="titulo">Analisando grau de ferimento</h2>
+                <img class="imgGrafico" src="/imgTelaGraficos/analise-grau-de-ferimento.png" alt="Grafico grau de ferimento">
+                <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" alt=""></h3>
+                <p class="informacoesGraficos">
+                    Aproximadamente 2.900 acidentes não resultaram em fatalidades, enquanto 1.550 acidentes resultaram em nenhum ferimento aparente. Em 40 casos, os acidentes foram fatais, e em 50 casos não houve informação disponível sobre o desfecho dos ferimentos.
+                </p>
+                <p class="linhaVerde"></p>
+            </div>
+
+            <div class="descricaoGraficos">
+                <h2 class="titulo">Analisando acidentes em comparação entre homens e mulheres</h2>
+                <img class="imgGrafico" src="/imgTelaGraficos/acidentes-masculino-feminino.png" alt="Grafico masculino e feminino">
+                <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" alt=""></h3>
+                <p class="informacoesGraficos">
+                    Aproximadamente 3.000 acidentes envolveram indivíduos do sexo masculino, enquanto 1.550 envolveram indivíduos do sexo feminino. Em 30 casos, o sexo dos envolvidos não foi identificado.
+                </p>
+                <p class="linhaVerde"></p>
+            </div>
+
+            <div class="descricaoGraficos">
+                <h2 class="titulo">Se houve declaração de Óbito</h2>
+                <img class="imgGrafico" src="/imgTelaGraficos/obitos.png" alt="Grafico obitos">
+                <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" alt=""></h3>
+                <p class="informacoesGraficos">
+                    Não houve declaração de óbito.
+                </p>
+                <p class="linhaVerde"></p>
+            </div>
+
+            <div class="descricaoGraficos">
+                <h2 class="titulo">Tipos de veículos</h2>
+                <img class="imgGrafico" src="/imgTelaGraficos/tipo-veiculo.png" alt="Grafico tipo de veiculo">
+                <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" alt=""></h3>
+                <p class="informacoesGraficos">
+                    O tipo de veículo com o maior número de acidentes foi o Automóvel, com aproximadamente 1.600 ocorrências. Em seguida, em ordem decrescente, o segundo tipo de veículo com o maior número de acidentes foi a Motocicleta, com aproximadamente 1.050 ocorrências, e o tipo de veículo com o menor número de acidentes foi o Triciclo, com aproximadamente 10 ocorrências.
+                </p>
+                <p class="linhaVerde"></p>
+            </div>
+
+       </div>
+
         </div>
     </div>
+
+    <!-- footer -->
+    <div class="card text-center">
+        <div class="card-header">
+        Sobre
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Conheça melhor o projeto</h5>
+          <p class="card-text">Se ficou curioso para saber como tratamos a base e desenvolvemos esse site:</p>
+          <a href="#" class="btn btn-success">Documentação</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+          2 dias atrás
+        </div>
+      </div>
+
+
+    <!-- scripts bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -1,0 +1,102 @@
+/* estilos header */
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  
+    display: flex; /* Ativa layout flexbox no cabeçalho */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; /* Distribui os itens nas extremidades com espaçamento entre eles */
+    
+  }
+  img{
+    margin: 5px 50px 2px 100px;
+  }
+  
+  .links {
+    display: flex; /* Ativa layout flexbox para os links */
+    margin-right: 300px;
+  }
+   
+  .links li {
+    margin-top: 40px;
+    list-style: none;
+    margin-right: 100px; /* Espaçamento de 25px entre os links */
+  }
+  
+  .links a {
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 20px;
+    display: block; /* O link ocupa o espaço total do li */
+    width: 152px; /* Largura dos botões */
+    height: 40px; /* Altura dos botões */
+    text-align: center; /* Alinha o texto no centro */
+    line-height: 40px; /* Alinha verticalmente o texto dentro da altura */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    border: none; /* Remove a borda padrão */
+    border-radius: 20px; /* Bordas arredondadas */
+    
+  }
+
+/* estilos gráficos */
+.background-graficos{
+    display: flex;
+    justify-content: center;
+    background-image: url('/img/walpaper_transito.svg');
+}
+.yellow_box{
+    border-radius: 10px;
+    width: 70%;
+    background-color: #fff500;
+}
+.yellow_box h1{
+    margin-left: 250px;
+
+}
+
+#containerGraficos{
+    margin-left: 140px;
+    width: 80%;
+    background-color: white;
+
+}
+.titulo{
+    margin-left: 250px;
+    font-size: 30px;
+}
+
+.textObs{
+  
+    margin-left: 2dvi;
+}
+.textObs img{
+    margin-left: 10px;
+}
+.informacoesGraficos{
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.linhaVerde{
+    margin-top: 50px;
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, green, yellow, red);
+}
+
+footer{
+  margin-top: 20px;
+}
+.card-header{
+  background-color: #1fb76d;
+  color: white;
+}
+.card-body{
+  background-color: black;
+  color: aliceblue;
+}
+
+.card-footer{
+ background-color: black;
+}

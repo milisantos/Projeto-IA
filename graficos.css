@@ -1,0 +1,76 @@
+body{
+    width: 1440px;
+    margin: auto;
+    height: 1024px;
+    background-image: url(/imgTelaGraficos/fundo-tela.jpeg);
+    background-size: contain;
+}
+
+
+#fundoGraficos{
+    display: flex;
+    width: 1206px;
+    height: 7780px;
+    background: #FFF500;
+    border-radius: 10px;
+    margin-top: 151px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+}
+
+
+#titulo1{
+   display: flex;
+   margin-left: 300px;
+   width: 900px;
+   margin-top: 40px;
+}
+
+#containerGraficos{
+    margin-top: 120px;
+    width: 1000px;
+    height: 7570px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: -1090px;
+}
+
+.descricaoGraficos{
+
+}
+
+.titulo{
+    margin-top: 45px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+
+.imgGrafico{
+    margin-left: 10px;
+}
+
+.textObs{
+    margin-left: 50px;
+}
+
+#alertaIcon{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-left: 175px;
+    margin-top: -25px;
+}
+
+.informacoesGraficos{
+    width: 800px;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.linhaVerde{
+    margin-top: 50px;
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, green, yellow, red);
+}

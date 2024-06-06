@@ -4,127 +4,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/fomulario.css">
   <title>Teste</title>
 </head>
 
 <body>
   <!-- Aqui eu quero deixar os testes e gerar um formulário automático -->
-  <form action="#">
+  <form action="/submit_form" method="post">
+    <div class="row">
+      <div class="column">
+        <!-- n° envolvidos  quantidade int-->
+        <div>
+          <label for="envolvidos">
+            <span>Número de envolvidos:</span>
+            <input id="envolvidos" placeholder="" type="text" name="envolvidos">
+            <abbr title="required">*</abbr>
+          </label>
+        </div>
 
-    <!-- n° envolvidos  quantidade int-->
-    <div>
-      <label for="envolvidos">
-        <span>Número de envolvidos:</span>
-        <input id="envolvidos" placeholder="" type="text" name="envolvidos">
-        <abbr title="required">*</abbr>
-      </label>
+
+        <!-- sexo -->
+        <div>
+          <label for="sexo">Infome o sexo:</label>
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+            <option value="1">---</option>
+            <option value="2">Feminino</option>
+            <option value="3">Masculino</option>
+            <option value="4">Não informado</option>
+          </select>
+        </div>
+
+
+
+        <!-- cinto de seguranca -->
+        <div>
+          <label for="cinto">Cinto de Segurança:</label>
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+            <option value="1">---</option>
+            <option value="2">Sim</option>
+            <option value="3">Não</option>
+          </select>
+        </div>
+
+
+        <!-- embreagues -->
+        <div>
+          <label for="embreagues">Embreaguês:</label>
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+            <option value="1">---</option>
+            <option value="2">Sim</option>
+            <option value="3">Não</option>
+          </select>
+        </div>
+
+        <!-- idade -->
+        <div>
+          <label for="idade">Idade do condutor:</label>
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+            <option value="1">---</option>
+            <option value="2">Sim</option>
+            <option value="3">Não</option>
+          </select>
+        </div>
+      </div>
+      <div class="column">
+        <!-- categoria habilitação -->
+        <div>
+          <label for="cinto">Categoria Habilitação:</label>
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+            <option value="1">---</option>
+            <option value="2">A</option>
+            <option value="3">AB</option>
+            <option value="4">AC</option>
+            <option value="5">AD</option>
+            <option value="6">AE</option>
+            <option value="7">AP</option>
+            <option value="8">B</option>
+            <option value="9">C</option>
+            <option value="10">D</option>
+            <option value="11">E</option>
+            <option value="12">IN (não habilitado)</option>
+            <option value="13">Não informado</option>
+          </select>
+        </div>
+
+        <!-- espécie veículo -->
+        <div>
+          <label for="veiculo">Espécie Veículo:</label>
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+            <option value="1">---</option>
+            <option value="2">A</option>
+            <option value="3">AB</option>
+            <option value="4">AC</option>
+            <option value="5">AD</option>
+            <option value="6">AE</option>
+            <option value="7">AP</option>
+            <option value="8">B</option>
+            <option value="9">C</option>
+            <option value="10">D</option>
+            <option value="11">E</option>
+            <option value="12">IN (não habilitado)</option>
+            <option value="13">Não informado</option>
+          </select>
+        </div>
+
+        <!-- pedestre -->
+        <div>
+          <label for="pedestre">Pedestres:</label>
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+            <option value="1">---</option>
+            <option value="2">Sim</option>
+            <option value="3">Não</option>
+          </select>
+        </div>
+
+        <!-- passageiro -->
+        <div>
+          <label for="passageiro">Passageirosj:</label>
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+            <option value="1">---</option>
+            <option value="2">Sim</option>
+            <option value="3">Não</option>
+          </select>
+        </div>
+      </div>
     </div>
-
-
-    <!-- sexo -->
-    <div>
-      <label for="sexo">Infome o sexo:</label>
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example">
-        <option value="1">---</option>
-        <option value="2">Feminino</option>
-        <option value="3">Masculino</option>
-        <option value="4">Não informado</option>     
-      </select>
-    </div>
-
-   
-
-    <!-- cinto de seguranca -->
-    <div>
-      <label for="cinto">Cinto de Segurança:</label>
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
-        <option value="1">---</option>
-        <option value="2">Sim</option>
-        <option value="3">Não</option>  
-      </select>
-    </div>
-
-
-    <!-- embreagues -->
-    <div>
-      <label for="embreagues">Embreaguês:</label>
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
-        <option value="1">---</option>
-        <option value="2">Sim</option>
-        <option value="3">Não</option>  
-      </select>
-    </div>
-
-    <!-- idade -->
-    <div>
-      <label for="idade">Idade do condutor:</label>
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
-        <option value="1">---</option>
-        <option value="2">Sim</option>
-        <option value="3">Não</option>  
-      </select>
-    </div>
-
-    <!-- categoria habilitação -->
-    <div>
-      <label for="cinto">Categoria Habilitação:</label>
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
-        <option value="1">---</option>
-        <option value="2">A</option>
-        <option value="3">AB</option>  
-        <option value="4">AC</option> 
-        <option value="5">AD</option> 
-        <option value="6">AE</option> 
-        <option value="7">AP</option> 
-        <option value="8">B</option> 
-        <option value="9">C</option> 
-        <option value="10">D</option> 
-        <option value="11">E</option> 
-        <option value="12">IN (não habilitado)</option> 
-        <option value="13">Não informado</option> 
-      </select>
-    </div>
-
-    <!-- espécie veículo -->
-    <div>
-      <label for="veiculo">Espécie Veículo:</label>
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
-        <option value="1">---</option>
-        <option value="2">A</option>
-        <option value="3">AB</option>  
-        <option value="4">AC</option> 
-        <option value="5">AD</option> 
-        <option value="6">AE</option> 
-        <option value="7">AP</option> 
-        <option value="8">B</option> 
-        <option value="9">C</option> 
-        <option value="10">D</option> 
-        <option value="11">E</option> 
-        <option value="12">IN (não habilitado)</option> 
-        <option value="13">Não informado</option> 
-      </select>
-    </div>
-
-    <!-- pedestre -->
-    <div>
-      <label for="pedestre">Pedestres:</label>
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
-        <option value="1">---</option>
-        <option value="2">Sim</option>
-        <option value="3">Não</option>  
-      </select>
-    </div>
-
-    <!-- passageiro -->
-    <div>
-      <label for="passageiro">Passageirosj:</label>
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
-        <option value="1">---</option>
-        <option value="2">Sim</option>
-        <option value="3">Não</option>  
-      </select>
-    </div>
-
   </form>
 </body>
 

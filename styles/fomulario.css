@@ -1,0 +1,27 @@
+.row {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre as colunas */
+  }
+  
+  /* Estilo para cada coluna */
+  .column {
+    width: 45%; /* Define a largura de cada coluna */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
+    margin-bottom: 20px; /* Espaçamento entre as linhas */
+  }
+  
+  /* Estilo para os inputs e selects */
+  input[type="text"],
+  .select-css {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilo para os labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }

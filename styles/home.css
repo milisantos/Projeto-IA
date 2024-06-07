@@ -1,94 +1,93 @@
-
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* secao do cabecalho */
 header {
+
+  display: flex; /* Ativa layout flexbox no cabeçalho */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: space-between; /* Distribui os itens nas extremidades com espaçamento entre eles */
   
-    display: flex; /* Ativa layout flexbox no cabeçalho */
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    justify-content: space-between; /* Distribui os itens nas extremidades com espaçamento entre eles */
-    
-  }
-  img{
-    margin: 5px 50px 2px 100px;
-  }
-  
-  .links {
-    display: flex; /* Ativa layout flexbox para os links */
-    margin-right: 300px;
-  }
-   
-  .links li {
-    margin-top: 40px;
-    list-style: none;
-    margin-right: 100px; /* Espaçamento de 25px entre os links */
-  }
-  
-  .links a {
-    text-align: center;
-    margin-bottom: 3px;
-    font-size: 20px;
-    display: block; /* O link ocupa o espaço total do li */
-    width: 152px; /* Largura dos botões */
-    height: 40px; /* Altura dos botões */
-    text-align: center; /* Alinha o texto no centro */
-    line-height: 40px; /* Alinha verticalmente o texto dentro da altura */
-    text-decoration: none; /* Remove o sublinhado padrão */
-    font-weight: bold;
-    border: none; /* Remove a borda padrão */
-    border-radius: 20px; /* Bordas arredondadas */
-    
-  }
+}
+img{
+  margin: 5px 50px 2px 100px;
+}
+
+.links {
+  display: flex; /* Ativa layout flexbox para os links */
+  margin-right: 300px;
+}
  
+.links li {
+  margin-top: 40px;
+  list-style: none;
+  margin-right: 100px; /* Espaçamento de 25px entre os links */
+}
+
+.links a {
+  text-align: center;
+  margin-bottom: 3px;
+  font-size: 20px;
+  display: block; /* O link ocupa o espaço total do li */
+  width: 152px; /* Largura dos botões */
+  height: 40px; /* Altura dos botões */
+  text-align: center; /* Alinha o texto no centro */
+  line-height: 40px; /* Alinha verticalmente o texto dentro da altura */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  font-weight: bold;
+  border: none; /* Remove a borda padrão */
+  border-radius: 20px; /* Bordas arredondadas */
+  
+}
+
 /* secao de introducao do projeto */
-  .base{
-    box-sizing: border-box;
-    max-width: 100%;
-    background-color: #ff862f;
-    background-size: contain;
-    background-position: center; 
+.base{
+  box-sizing: border-box;
+  max-width: 100%;
+  background-color: #ff862f;
+  background-size: contain;
+  background-position: center; 
 }
 .container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- font-family: Arial, Helvetica, sans-serif;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-family: Arial, Helvetica, sans-serif;
 
 }
 
 
 .letreiro h1{
-  word-break: normal;
-  margin-top: 0px;
-  width: 500px;
-  font-size: 60px;
-  color: aliceblue;
+word-break: normal;
+margin-top: 0px;
+width: 500px;
+font-size: 60px;
+color: aliceblue;
 }
 .letreiro p{
-  margin-left: 10px;
-  font-size: 25px;
-  color: black;
+margin-left: 10px;
+font-size: 25px;
+color: black;
 }
 .letreiro a{
-  display: block; /* O link ocupa o espaço total do li */
-  width: 152px; /* Largura dos botões */
-  height: 40px; /* Altura dos botões */
-  margin-left: 10px;
-  text-align: center; /* Alinha o texto no centro */
-  line-height: 40px; /* Alinha verticalmente o texto dentro da altura */
-  text-decoration: none; /* Remove o sublinhado padrão */
-  font-weight: bold;
-  background-color: black;
-  color: #FFF500;
-  border-radius: 20px;
-  
+display: block; /* O link ocupa o espaço total do li */
+width: 152px; /* Largura dos botões */
+height: 40px; /* Altura dos botões */
+margin-left: 10px;
+text-align: center; /* Alinha o texto no centro */
+line-height: 40px; /* Alinha verticalmente o texto dentro da altura */
+text-decoration: none; /* Remove o sublinhado padrão */
+font-weight: bold;
+background-color: black;
+color: #FFF500;
+border-radius: 20px;
+
 }
 
 .faixa{
-  padding-top: 100px;
+padding-top: 100px;
 }
 
 
@@ -97,51 +96,51 @@ header {
 
 /* secao 2 descricao da base de dados */
 .apresentacao{
-  background-image: url('/img/walpaper_transito.svg');
-  display: flex;
- justify-content: center;
-  /* imagem de fundo */
+background-image: url('/img/walpaper_transito.svg');
+display: flex;
+justify-content: center;
+/* imagem de fundo */
 }
 /* caixa amarela */
 .yellow{
-  width: 70%;
-  background-color: #FFF500;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+width: 70%;
+background-color: #FFF500;
+border-radius: 10px;
+margin-top: 20px;
+margin-bottom: 30px;
 
 }
 
 .content{
-  display: flex;
-  margin-left: 50px; /* margem da caixa do conteudo */
-  margin-top: 30px;
+display: flex;
+margin-left: 50px; /* margem da caixa do conteudo */
+margin-top: 30px;
 
 }
 /* conteudo da caixa amarela */
 .content h2{
-  margin-top: 20px; /* margem do titulo em relação a caixa conteudo */
+margin-top: 20px; /* margem do titulo em relação a caixa conteudo */
 }
 
 .content .img{
-  margin-left: 150px; /* margem dos icones em relação a caixa conteudo */
+margin-left: 150px; /* margem dos icones em relação a caixa conteudo */
 }
 
 .info{
-  width: 1200px;
-  background-color: white;
-  margin-top: 20px;
-  margin-left: 50px;
+width: 1200px;
+background-color: white;
+margin-top: 20px;
+margin-left: 50px;
 }
 
 .info h3{
 margin-left: 15px;
 }
 .info p{
-  margin-left: 15px;
+margin-left: 15px;
 }
 .info span{
-  margin-left: 15px;
+margin-left: 15px;
 }
 .dados{
 text-align: center;
@@ -158,71 +157,189 @@ margin-bottom: 10px;
 
 /* estilo do formulário */
 h3 {
-  margin-left: 50px;
+margin-left: 50px;
 }
 .formulario{
-  text-align: center;
+text-align: center;
 }
 
 fieldset {
-  
-  width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+
+width: 500px;
+margin: 0 auto;
+padding: 20px;
+border-radius: 10px;
+border: 1px solid #ccc;
 }
 
 legend {
-  font-weight: bold;
-  margin-bottom: 10px;
+font-weight: bold;
+margin-bottom: 10px;
 }
 
 .linha {
-  display: flex;
-  margin-bottom: 10px;
+display: flex;
+margin-bottom: 10px;
 }
 
 label {
-  width: 150px;
-  margin-right: 10px;
+width: 150px;
+margin-right: 10px;
 }
 
 select {
-  width: 100px;
-  padding: 5px;
-  border: 1px solid #ccc;
+width: 100px;
+padding: 5px;
+border: 1px solid #ccc;
 }
 
 button {
-  display: block;
-  /* margin: 20px auto; */
-  margin-left: 2px;
-  padding: 10px 20px;
-  border: none;
-  background-color: #1fb76d;
-  color: #fff;
-  cursor: pointer;
+display: block;
+/* margin: 20px auto; */
+margin-left: 2px;
+padding: 10px 20px;
+border: none;
+background-color: #1fb76d;
+color: #fff;
+cursor: pointer;
 }
 
 /* estilos do footer */
 
-footer{
-  margin-top: 20px;
+/* Estilos gerais */
+body {
+font-family: Arial, sans-serif;
 }
 
-.card-header{
-  background-color:#1fb76d;
-  color: white;
-}
-.card-body{
-  background-color: black;
-  color: aliceblue;
-}
-
-.card-footer{
- background-color: black;
+/* Rodapé */
+footer {
+background-color: #333;
+color: white;
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
+/* Branding */
+.brand h2 {
+margin: 0;
+color: #fff;
+}
+
+/* Descrição */
+.description div {
+width: 50%;
+}
+
+.description ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.description ul li {
+margin-bottom: 5px;
+}
+
+.description ul hr {
+border-top: 1px solid #ccc;
+margin: 10px 0;
+}
+
+/* Informações */
+.informacoes {
+width: 30%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.informacoes h3 {
+margin: 0;
+color: #ddd;
+}
+
+.informacoes p {
+color: #aaa;
+margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+.description,.informacoes {
+    width: 100%;
+}
+}
+
+/* responsividade */
+@media (min-width: 1850px) {
+/* Ajustes para telas maiores que 1850px */
+
+/* Ajuste na largura da caixa amarela */
+.yellow {
+    width: 80%; /* Ajuste conforme necessário */
+}
+
+/* Ajuste na largura da caixa de informação */
+.info {
+    width: 90%; /* Ajuste conforme necessário */
+}
+
+/* Ajuste na largura do container */
+.container {
+    width: 95%; /* Ajuste conforme necessário */
+}
+
+/* Ajuste na largura do cabeçalho */
+header {
+    width: 100%; /* Ajuste conforme necessário */
+}
+
+/* Adicione mais ajustes conforme necessário para outros elementos */
+}
+
+
+/* estilo breadcrumb */
+/* Estilização geral do breadcrumb */
+.breadcrumb {
+background-color: #f8f9fa; /* Cor de fundo do breadcrumb */
+padding: 10px; /* Espaçamento interno */
+margin-bottom: 20px; /* Margem inferior para separar do conteúdo abaixo */
+}
+
+/* Estilização dos itens do breadcrumb */
+.breadcrumb ol {
+display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+list-style-type: none; /* Remove os marcadores de lista padrão */
+padding: 0; /* Remove o preenchimento padrão da lista */
+margin: 0; /* Remove a margem padrão da lista */
+}
+
+.breadcrumb ol li {
+margin-right: 10px; /* Margem à direita para separar os itens */
+}
+
+.breadcrumb ol li:last-child::after { /* Adiciona uma seta após o último item */
+content: ">";
+margin-right: 5px; /* Margem à direita para separar a seta do texto */
+}
+
+/* Estilização do item ativo */
+.breadcrumb ol li.active {
+font-weight: bold; /* Torna o texto do item ativo em negrito */
+color: #007bff; /* Muda a cor do texto do item ativo para azul */
+}
+
+/* Estilização dos links dentro dos itens do breadcrumb */
+.breadcrumb ol li a {
+color: #343a40; /* Cor do texto dos links */
+text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.breadcrumb ol li a:hover {
+text-decoration: underline; /* Sublinha o link quando passado o mouse */
+color: #007bff; /* Muda a cor do link quando passado o mouse */
+}
 
 

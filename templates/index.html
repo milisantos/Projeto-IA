@@ -1,0 +1,182 @@
+Atualizações nos atalhos do teclado … Em quinta-feira, 1 de agosto de 2024, os atalhos de teclado do Drive serão atualizados para oferecer a navegação por letras iniciais.Saiba mais
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/home.css">
+    <title>Base da Dados Trânsito</title>
+</head>
+
+<body>
+    <!-- menu do site -->
+    <header>
+        <img src="/img/logo.svg" alt="logomarca" width="100px">
+        <ul class="links">
+            <li>
+                <a href="https://docs.google.com/spreadsheets/d/1P_muEHeVbgYwI1R7D4wQDgTwuSlMvnzICQJXxwNEOFE/edit?usp=sharing"
+                    target="_blank" class="btn btn-outline-danger">Base</a>
+            </li>
+            <li>
+                <a href="/templates/copiagraficos.html" class="btn btn-outline-warning">Gráficos</a>
+            </li>
+
+            <li>
+                <a href="/templates/formulario.html" class="btn btn-outline-info">Previsão</a>
+            </li>
+
+        </ul>
+
+    </header>
+
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+        <!-- breadcrumb -->
+
+
+    <section class="base">
+        <div class="container">
+            <div class="letreiro">
+                <h1>Na Pista dos Dados: <br>
+                    Uma Jornada Exploratória de <br>
+                    Acidentes de Trânsito</h1>
+                <p>Para acessar o nosso Notebook no <br>
+                    <b><mark>Google Colab</mark></b> clique no botão abaixo:
+                </p>
+                <a href="https://colab.research.google.com/drive/1eCfGCLu4Rhw1vY7Lpx4EP4WxBCECfRLi"
+                    target="_blank">Acesse já</a>
+            </div>
+
+            <img class="faixa" src="/img/Dia Mundial da Bicicleta (1)-Photoroom 3.svg" height="900px"
+                alt="faixa de pedestre">
+        </div>
+
+
+    </section>
+
+
+    <!-- caixa de apresentacao -->
+
+    <section class="apresentacao">
+        <!-- colocar a imagem que cubra a tela toda -->
+        <div class="yellow">
+
+
+            <div class="content">
+                <div>
+                    <h2>Acidentes de Trânsito 2020</h2>
+                </div>
+
+                <div class="img">
+                    <img src="/img/carro-compacto 1.svg" alt=" icone carro">
+                    <img src="/img/moto 2.svg" alt=" icone moto">
+                    <img src="/img/acidente-de-carro 2.svg" alt="icone batida de carro">
+                </div>
+
+            </div>
+            <!-- cabeçalho9 da caixa -->
+            <div class="info">
+                <h3>Sobre o Projeto:</h3>
+                <p>
+                    Essas informações tiveram como base a pesquisa feita pelo Detran, no <br>
+                    ano de 2020. Todo o tratamento de dados e análise foi feito pela equipe <br>
+                    de Desenvolvedores: <b> Mylena Santos, Ewergthon Renan, Emilly <br>
+                        Silva e Samara Beatriz.</b> Na base de dados do Detran, referente ao ano de <br>
+                    2020,temos as informações de todos os acidentes automobilísticos regis- <br>
+                    trados no Brasil. A partir disso realizamos todas as etapas da análise exploratória <br>
+                    dos dados para realizar esse estudo.<br>
+
+                </p>
+                <span>
+                    Acesse a base para visualizar os atributos no botão abaixo:
+                </span>
+
+                <a class="dados" href="https://www.kaggle.com/datasets/raphaelmarconato/detran-accidents-2020"
+                    target="_blank">base de dados</a>
+
+            </div>
+            <!-- atributos da base -->
+            <div class="info">
+                <h3>Sobre a base:</h3>
+                <p>
+                    Esta base de dados é disponibilizada pelo Detran (Departamento Estadual de Trânsito). <br>
+                    Nela, há informações sobre todos os acidentes de carro registrados no Brasil no ano de 2020. <br>
+                    A base contém uma grande quantidade de dados que possibilitam a realização de diversos estudos <br>
+                    valiosos. <br>
+
+                </p>
+                <span>Atributos da Base:</span>
+                <ul>
+                    <li><b>Num_boletim:</b> Número de registro do acidente</li>
+                    <li> <b>data_hora_boletim:</b> Data e hora do registro</li>
+                    <li><b> Nº_envolvido:</b> Número de pessoas envolvidas no acidente</li>
+                    <li><b>condutor:</b> Se o condutor teve responsabilidade no acidente </li>
+                    <li> <b>desc_severidade:</b> Se o acidente foi faltal ou não</li>
+                    <li><b>sexo:</b> Sexo da pessoa</li>
+                    <li><b>cinto_seguranca:</b>Se eles usavam cinto de segurança</li>
+                    <li><b>Embreagues:</b> Se o condutor esta embreagado</li>
+                    <li><b>Idade:</b> Idade </li>
+                    <li><b>nascimento:</b> Data de nascimento</li>
+                    <li><b>categoria_habilitacao:</b> Tipo de habilitação</li>
+                    <li><b>descricao_habilitacao:</b> Descrição ou qualificação da carteira do motorista</li>
+                    <li><b>declaracao_obito:</b> Se houve alguma morte ou não </li>
+                    <li><b>cod_severidade_antiga:</b> código de severidade do registro </li>
+                    <li><b>especie_veiculo:</b> Tipo do veículo</li>
+                    <li><b>pedestre:</b> Se tinha algum pedestre envolvido no acidente</li>
+                    <li><b>passageiro:</b> Se tinha passageiro no veículo </li>
+
+                </ul>
+
+            </div>
+
+
+
+        </div><!-- caixa amarela -->
+
+    </section> <!-- apresentação da base -->
+
+
+
+
+    <footer>
+   
+        <div class="brand">
+          <h2>Base Trânsito</h2>
+        </div>
+    
+        <div class="description">
+          <div>
+            <h2>Contato</h2>
+            <ul>
+              <li>Email</li>
+              <hr>
+              <li>todos os direitos reservados.</li>
+            </ul>
+          </div>
+    
+          
+        </div>
+    
+       
+      </footer>
+    <!-- scripts bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+Atualizações nos atalhos do teclado … Em quinta-feira, 1 de agosto de 2024, os atalhos de teclado do Drive serão atualizados para oferecer a navegação por letras iniciais.Saiba mais
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/copiagraficos.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="/index.html"><img src="/img/logo.svg" alt="logomarca" width="100px"></a>
+        <ul class="links">
+            <li>
+                <a href="https://docs.google.com/spreadsheets/d/1P_muEHeVbgYwI1R7D4wQDgTwuSlMvnzICQJXxwNEOFE/edit?usp=sharing"
+                    target="_blank" class="btn btn-outline-danger">Base</a>
+            </li>
+            <li>
+                <a href="/graficos.html" class="btn btn-outline-warning">Gráficos</a>
+            </li>
+
+            <li>
+                <a href="/formulario.html" class="btn btn-outline-info">Previsão</a>
+            </li>
+
+        </ul>
+
+    </header>
+
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/templates/index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Análises</li>
+        </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+
+    <section class="background-graficos">
+        <div class="yellow_box">
+
+            <h1 id="titulo-principal">Informações Base De Dados Acidentes 2020</h1>
+
+            <div id="containerGraficos">
+                <div class="descricaoGraficos">
+                    <p class="linhaVerde"></p>
+                    <h2 class="titulo">Faixa etária dos envolvidos nos acidentes</h2>
+                    <img class="imgGrafico" src="/imgTelaGraficos/faixa-etaria-ac.png" alt="Grafico idade">
+                    <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png"
+                            alt="icone de alerta" height="25px" width="25px"></h3>
+                    <p class="informacoesGraficos">
+                        Observamos que, em média, ocorreram 51 acidentes envolvendo indivíduos com idades entre 0 a 5
+                        anos. Os picos mais significativos de ocorrências foram registrados nas seguintes faixas
+                        etárias: 20 a 25 anos, com 3505 acidentes e 25 a 30 anos, com 3030 acidentes.
+                    </p>
+                    <p class="linhaVerde"></p>
+
+                </div>
+
+                <div class="descricaoGraficos">
+                    <h2 class="titulo">Boxplot referente a idade</h2>
+                    <img class="imgGrafico" src="/imgTelaGraficos/mediana-da-idade.png" alt="Grafico idade">
+                    <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" height="25px"
+                            width="25px" alt=""></h3>
+                    <p class="informacoesGraficos">
+                        O maior índice de acidentes foram com pessoas entre seus 20 há 25 anos.
+                    </p>
+                    <p class="linhaVerde"></p>
+                </div>
+
+                <div class="descricaoGraficos">
+                    <h2 class="titulo"> Acidentes por tipo de veículo</h2>
+                    <img class="imgGrafico" src="/imgTelaGraficos/ac-tipo-veiculo.png" alt="Grafico tipo de veiculo">
+                    <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" height="25px"
+                            width="25px" alt=""></h3>
+                    <p class="informacoesGraficos">
+                        O tipo de veículo com o maior número de acidentes foi o Automóvel, com 8941 ocorrências. Em
+                        seguida, em ordem decrescente, o segundo tipo de veículo com o maior número de acidentes foi a
+                        Motocicleta, com 8771 ocorrências, o terceiro sendo Ônibus, com 808 ocorrências e Bicicleta com
+                        457 ocorrências.
+                    </p>
+                    <p class="linhaVerde"></p>
+                </div>
+
+                <div class="descricaoGraficos">
+                    <h2 class="titulo">Acidentes com embriagues</h2>
+                    <img class="imgGrafico" src="/imgTelaGraficos/ac-embreagues.png" alt="Grafico embriaguez">
+                    <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" height="25px"
+                            width="25px" alt=""></h3>
+                    <p class="informacoesGraficos">
+                        Em 19831 acidentes os envolvidos não estavam embriagados e 280 estavam.
+                    </p>
+                    <p class="linhaVerde"></p>
+                </div>
+
+                <div class="descricaoGraficos">
+                    <h2 class="titulo">Acidentes com condutor</h2>
+                    <img class="imgGrafico" src="/imgTelaGraficos/ac-condutor.png" alt="Grafico condutor">
+                    <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" height="25px"
+                            width="25px" alt=""></h3>
+                    <p class="informacoesGraficos">
+                        17950 acidentes envolviam veículos com condutor, enquanto cerca de 2161 acidentes ocorreram em
+                        circunstâncias em que o veículo não tinha um condutor.
+                    </p>
+                    <p class="linhaVerde"></p>
+                </div>
+
+                <div class="descricaoGraficos">
+                    <h2 class="titulo">Analisando grau de ferimento</h2>
+                    <img class="imgGrafico" src="/imgTelaGraficos/ac-severidade.png" alt="Grafico grau de ferimento">
+                    <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" height="25px"
+                            width="25px" alt=""></h3>
+                    <p class="informacoesGraficos">
+                        11200 acidentes ocasionaram em ferimentos, enquanto 8839 acidentes ocasionaram em nenhum
+                        ferimento aparente e em 72 casos, os acidentes foram fatais.
+                    </p>
+                    <p class="linhaVerde"></p>
+                </div>
+
+                <div class="descricaoGraficos">
+                    <h2 class="titulo">Comparação entre homens e mulheres</h2>
+                    <img class="imgGrafico" src="/imgTelaGraficos/ac-M-F.png" alt="Grafico masculino e feminino">
+                    <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" height="25px"
+                            width="25px" alt=""></h3>
+                    <p class="informacoesGraficos">
+                        15996 acidentes envolveram indivíduos do sexo masculino, enquanto 4115 envolveram indivíduos do
+                        sexo feminino.
+                    </p>
+                    <p class="linhaVerde"></p>
+                </div>
+
+                <div class="descricaoGraficos">
+                    <h2 class="titulo">Relação entre Embreagues e Fatalidade</h2>
+                    <img class="imgGrafico" src="/imgTelaGraficos/pizza_embreagues_sim.png"
+                        alt="Grafico embreagues sim">
+                    <img class="imgGrafico margem" src="/imgTelaGraficos/pizza_embregues_Nao.png"
+                        alt="Grafico embreagues não">
+
+                    <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" height="25px"
+                            width="25px" alt=""></h3>
+                    <p class="informacoesGraficos">
+                        Levando em consideração que o código no severidade "1" representa "não fatal" e "3" representa
+                        "sem ferimentos"
+                        conseguimos identificar que dos envolvidos no acidente que estavam embreagados, 69,2% sofreram
+                        ferimentos e apenas 30% não sofreram ferimentos.
+                        No segundo gráfico de pessoas que não estavam embreagadas, é apontado que 62,9% ficaram com
+                        ferimentos e 33,7% sairam ilesas.
+                    </p>
+                    <p class="linhaVerde"></p>
+                </div>
+
+                <div class="descricaoGraficos">
+                    <h2 class="titulo"> Cinto de segurança e Fatalidade</h2>
+                    <img class="imgGrafico" src="/imgTelaGraficos/pizza_cinto_porNao.png"
+                        alt="Grafico uso do cinto não">
+                    <img class="imgGrafico" src="/imgTelaGraficos/pizza_cinto_sim.png" alt="Grafico uso do cinto sim">
+                    <h3 class="textObs">Observações <img id="alertaIcon" src="/imgTelaGraficos/alerta.png" height="25px"
+                            width="25px" alt=""></h3>
+                    <p class="informacoesGraficos">
+                        A partir da análise do gráfico, identificamos que 80% das pessoas que não usaram cinta de
+                        segurança sofreram ferimentos
+                        mas não vieram a óbito. Sendo assim o uso do cinto assegura a prevenção de lesões em acidentes.
+                        Em seguida, no segundo gráfico verificamos que 41% das pessoas que usaram cinto ficaram sem
+                        ferimentos.
+                    </p>
+                    <p class="linhaVerde"></p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="brand">
+            <h2>Base Trânsito</h2>
+        </div>
+
+        <div class="description">
+            <div>
+                <h2>Contato</h2>
+                <ul>
+                    <li>Email</li>
+                    <hr>
+                    <li>todos os direitos reservados.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

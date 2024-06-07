@@ -1,27 +1,102 @@
-.row {
-    display: flex;
-    justify-content: space-between; /* Espaçamento entre as colunas */
-  }
-  
-  /* Estilo para cada coluna */
+.formulario-container {
+  background-color: #f8f9fa; /* Cor de fundo da div envolvente */
+  border-radius: 10px; /* Bordas arredondadas para dar um aspecto mais suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efeito de sombra para dar profundidade */
+  padding: 20px; /* Espaçamento interno para separar o formulário do contêiner */
+  margin-bottom: 50px;
+  max-width: 600px; /* Largura máxima do contêiner */
+  margin: auto; /* Centraliza o contêiner na página */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre os campos do formulário */
+}
+
+input[type="submit"] {
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove borda */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  cursor: pointer; /* Altera o cursor para um ponteiro quando passado sobre o botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 16px; /* Tamanho da fonte do texto do botão */
+  margin-top: 20px; /* Margem superior para separar o botão do campo acima */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Cor de fundo escura do botão ao passar o mouse */
+}
+
+
+/* formulário */
+
+/* breadcrumb */
+/* Estilização geral do breadcrumb */
+.breadcrumb {
+  background-color: #f8f9fa; /* Cor de fundo do breadcrumb */
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Margem inferior para separar do conteúdo abaixo */
+}
+
+/* Estilização dos itens do breadcrumb */
+.breadcrumb ol {
+  display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+  list-style-type: none; /* Remove os marcadores de lista padrão */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  margin: 0; /* Remove a margem padrão da lista */
+}
+
+.breadcrumb ol li {
+  margin-right: 10px; /* Margem à direita para separar os itens */
+}
+
+.breadcrumb ol li:last-child::after { /* Adiciona uma seta após o último item */
+  content: ">";
+  margin-right: 5px; /* Margem à direita para separar a seta do texto */
+}
+
+/* Estilização do item ativo */
+.breadcrumb ol li.active {
+  font-weight: bold; /* Torna o texto do item ativo em negrito */
+  color: #007bff; /* Muda a cor do texto do item ativo para azul */
+}
+
+/* Estilização dos links dentro dos itens do breadcrumb */
+.breadcrumb ol li a {
+  color: #343a40; /* Cor do texto dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.breadcrumb ol li a:hover {
+  text-decoration: underline; /* Sublinha o link quando passado o mouse */
+  color: #007bff; /* Muda a cor do link quando passado o mouse */
+}
+
+
+/* responsividade */
+@media (max-width: 1850px) {
+  .formulario-container {
+     width: 90%; /* Ajusta a largura do contêiner para ocupar 90% da largura da tela */
+     margin-left: auto;
+     margin-right: auto;
+   }
+ 
   .column {
-    width: 45%; /* Define a largura de cada coluna */
-    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
-    margin-bottom: 20px; /* Espaçamento entre as linhas */
-  }
-  
-  /* Estilo para os inputs e selects */
-  input[type="text"],
-  .select-css {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  /* Estilo para os labels */
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
+     flex-direction: column; /* Alinha os elementos verticalmente em telas menores */
+   }
+ 
+  .form-select {
+     width: 100%; /* Faz com que os selects ocupem toda a largura disponível */
+   }
+ 
+   input[type="submit"],.form-select {
+     margin-bottom: 10px; /* Reduz a margem inferior para economizar espaço */
+   }
+ }
